@@ -1,0 +1,282 @@
+/* =====================================
+   Do & Don’t – Full Page CSS
+   MediguideAI
+   ===================================== */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #e6f4f1;
+  color: #1f2937;
+}
+
+/* ===============================
+   FORCE NAV BAR
+   =============================== */
+.top-nav {
+  background: linear-gradient(135deg, #0f766e, #14b8a6);
+  padding: 18px 20px;
+  text-align: center;
+}
+
+.top-nav .brand {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.top-nav nav {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.top-nav nav a {
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.15);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.top-nav nav a:hover,
+.top-nav nav a.active {
+  background: #ffffff;
+  color: #0f766e;
+}
+
+/* ===============================
+   MAIN GENERATOR
+   =============================== */
+.dd-generator {
+  text-align: center;
+  padding: 90px 20px 50px;
+}
+
+.dd-generator h1 {
+  font-size: 40px;
+  color: #0f766e;
+  margin-bottom: 10px;
+}
+
+.dd-generator p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 35px;
+  line-height: 1.6;
+}
+
+/* Form */
+.dd-form {
+  margin-bottom: 40px;
+}
+
+.dd-form select,
+.dd-form button {
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.dd-form select {
+  border: 2px solid #0f766e;
+  min-width: 260px;
+}
+
+.dd-form button {
+  background: #0f766e;
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dd-form button:hover {
+  background: #115e59;
+}
+
+/* ===============================
+   RESULT BOXES
+   =============================== */
+.dd-result {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px auto;
+  flex-wrap: wrap;
+}
+
+.dd-box {
+  width: 320px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 22px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.dd-box h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.dd-box ul {
+  margin-left: 20px;
+}
+
+.dd-box li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.do-box h3 {
+  color: #0f766e;
+}
+
+.dont-box h3 {
+  color: #dc2626;
+}
+
+/* ===============================
+   DETAIL SECTION
+   =============================== */
+.dd-detail {
+  max-width: 950px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.dd-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 26px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.dd-card h3 {
+  font-size: 28px;
+  color: #0f766e;
+  margin-bottom: 10px;
+}
+
+.dd-card p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.dd-card h4 {
+  margin-top: 22px;
+  font-size: 21px;
+  color: #0f766e;
+}
+
+.dd-card ul {
+  margin-left: 22px;
+  margin-top: 10px;
+}
+
+.dd-card li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.dd-card .warn {
+  color: #dc2626;
+}
+
+/* ===============================
+   EXTRA DEPTH INFO BLOCK
+   =============================== */
+.dd-extra {
+  max-width: 950px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.dd-extra .extra-card {
+  background: #f0fdfa;
+  border-left: 6px solid #0f766e;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.dd-extra h3 {
+  color: #0f766e;
+  margin-bottom: 10px;
+}
+
+/* ===============================
+   FOOTER
+   =============================== */
+.footer {
+  background: #0f766e;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px;
+  margin-top: 80px;
+}
+
+/* ===============================
+   RESPONSIVE
+   =============================== */
+@media (max-width: 768px) {
+  .dd-generator h1 {
+    font-size: 32px;
+  }
+  .dd-box {
+    width: 100%;
+  }
+  .dd-card {
+    padding: 28px;
+  }
+}
+/* ===============================
+   DISCLAIMER SECTION
+   =============================== */
+.dd-disclaimer {
+  max-width: 950px;
+  margin: 70px auto 30px;
+  padding: 0 20px;
+}
+
+.disclaimer-card {
+  background: #fff7ed;
+  border-left: 6px solid #f97316;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.disclaimer-card h3 {
+  color: #c2410c;
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.disclaimer-card p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.disclaimer-card .note {
+  font-weight: bold;
+  color: #9a3412;
+}

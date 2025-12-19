@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Symptom Checker | MediguideAI</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="symptom-checker.css">
+</head>
+<body>
+
+<header class="top-nav">
+    <div class="brand">MediguideAI</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="symptom-checker.html" class="active">Symptom Checker</a>
+        <a href="ai-chat.html">AI Chat</a>
+        <a href="emergency-care.html">Emergency Care</a>
+        <a href="do-dont.html">Do & Don’t</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<section class="sym-hero">
+    <h1>Symptom Checker</h1>
+    <p>
+        Select symptoms and severity to get structured health guidance and
+        understand possible causes and safe next steps.
+    </p>
+</section>
+
+<section class="sym-form-section">
+    <h2>Select Your Symptoms</h2>
+
+    <div class="sym-form">
+        <div class="symptoms-list">
+            <label><input type="checkbox" value="Fever"> Fever</label>
+            <label><input type="checkbox" value="Cold & Cough"> Cold & Cough</label>
+            <label><input type="checkbox" value="Headache"> Headache</label>
+            <label><input type="checkbox" value="Body Pain"> Body Pain</label>
+            <label><input type="checkbox" value="Stomach Pain"> Stomach Pain</label>
+            <label><input type="checkbox" value="Vomiting"> Vomiting</label>
+            <label><input type="checkbox" value="Diarrhea"> Diarrhea</label>
+            <label><input type="checkbox" value="Chest Pain"> Chest Pain</label>
+            <label><input type="checkbox" value="Breathing Difficulty"> Breathing Difficulty</label>
+            <label><input type="checkbox" value="Dizziness"> Dizziness</label>
+            <label><input type="checkbox" value="Sore Throat"> Sore Throat</label>
+            <label><input type="checkbox" value="Fatigue"> Fatigue</label>
+        </div>
+
+        <div class="sym-controls">
+            <label>
+                Severity:
+                <select id="severitySelect">
+                    <option value="mild">Mild</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="severe">Severe</option>
+                </select>
+            </label>
+            <button onclick="analyzeSymptoms()">Analyze Symptoms</button>
+        </div>
+    </div>
+</section>
+
+<!-- RESULTS -->
+<section id="resultSection" class="sym-results" style="display:none;">
+    <h2>Health Guidance</h2>
+
+    <div class="result-card">
+        <h3>Possible Causes</h3>
+        <ul id="causeList"></ul>
+    </div>
+
+    <div class="result-card">
+        <h3>Recommended Home Care</h3>
+        <ul id="careList"></ul>
+    </div>
+
+    <div class="result-card">
+        <h3>When to See a Doctor</h3>
+        <ul id="doctorList"></ul>
+    </div>
+
+    <div class="result-card warning">
+        <h3>Emergency Warning</h3>
+        <p id="emergencyText"></p>
+    </div>
+</section>
+
+<!-- IN-DEPTH CONTENT -->
+<section class="sym-info">
+    <h2>About the Symptom Checker</h2>
+    <div class="info-card">
+        <p>
+            The Symptom Checker is designed to help users understand common symptoms
+            and recognize patterns that may indicate health conditions. It does not
+            provide diagnosis but offers structured medical awareness.
+        </p>
+        <p>
+            By combining user-selected symptoms and severity, the system provides
+            general guidance, home care tips, and identifies when professional care
+            is required.
+        </p>
+    </div>
+</section>
+
+<section class="sym-info">
+    <h2>Why Use This Tool?</h2>
+    <div class="info-grid">
+        <div class="info-card">
+            <h3>Early Awareness</h3>
+            <p>Helps identify health concerns at an early stage.</p>
+        </div>
+        <div class="info-card">
+            <h3>Safe Guidance</h3>
+            <p>Promotes safe actions and avoids risky self-treatment.</p>
+        </div>
+        <div class="info-card">
+            <h3>Emergency Focus</h3>
+            <p>Highlights symptoms that require urgent care.</p>
+        </div>
+        <div class="info-card">
+            <h3>User Friendly</h3>
+            <p>Simple selection-based interface for everyone.</p>
+        </div>
+    </div>
+</section>
+
+<section class="sym-info warning-section">
+    <h2>Important Medical Disclaimer</h2>
+    <div class="info-card">
+        <ul>
+            <li>This tool provides informational guidance only.</li>
+            <li>It does not replace professional medical advice.</li>
+            <li>Do not use this tool for medical diagnosis.</li>
+            <li>Always consult a qualified healthcare provider.</li>
+            <li>In emergencies, contact local emergency services immediately.</li>
+        </ul>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2025 MediguideAI. All rights reserved.</p>
+</footer>
+
+<script src="symptom-checker.js"></script>
+</body>
+</html>

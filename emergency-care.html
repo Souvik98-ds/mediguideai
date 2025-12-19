@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emergency Mode | MediguideAI</title>
+
+    <link rel="stylesheet" href="emergency-mode.css">
+
+    <!-- Leaflet (FREE MAP) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+
+<header class="top-nav">
+    <div class="brand">MediguideAI</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="symptom-checker.html">Symptom Checker</a>
+        <a href="ai-chat.html">AI Chat</a>
+        <a href="emergency-mode.html" class="active">Emergency Mode</a>
+        <a href="do-dont.html">Do & Don’t</a>
+        <a href="about.html">About</a>
+
+    </nav>
+</header>
+
+<section class="alert">
+    🚨 EMERGENCY MODE — Use only in serious situations
+</section>
+
+<main class="container">
+
+    <!-- BIG BUTTON -->
+    <section class="emergency-button-section">
+        <button class="emergency-btn" onclick="activateEmergencyMode()">
+            ACTIVATE EMERGENCY MODE
+        </button>
+        <p>One click to get immediate help guidance</p>
+    </section>
+
+    <!-- IMMEDIATE ACTION -->
+    <section class="card" id="actionBox" style="display:none;">
+        <h2>Immediate Actions</h2>
+        <ul>
+            <li>Stay calm and ensure safety</li>
+            <li>Call emergency services immediately</li>
+            <li>Do not move injured persons unless required</li>
+            <li>Follow on-screen guidance</li>
+        </ul>
+    </section>
+
+    <!-- EMERGENCY NUMBERS -->
+    <section class="card" id="numberBox" style="display:none;">
+        <h2>Emergency Numbers (India)</h2>
+        <div class="numbers">
+            <div>🚑 Ambulance: <strong>108</strong></div>
+            <div>🚓 Police: <strong>112</strong></div>
+            <div>🔥 Fire: <strong>101</strong></div>
+            <div>☠ Poison Control: <strong>1066</strong></div>
+        </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="card" id="mapBox" style="display:none;">
+        <h2>Your Location</h2>
+        <div id="map"></div>
+    </section>
+    <!-- NEARBY HELP -->
+<section class="card" id="nearbyBox" style="display:none;">
+    <h2>Nearby Emergency Help</h2>
+
+    <h3>🏥 Hospitals</h3>
+    <ul id="hospitalList"></ul>
+
+    <h3>💊 Pharmacies</h3>
+    <ul id="pharmacyList"></ul>
+</section>
+
+
+    <!-- DISCLAIMER -->
+    <p class="disclaimer">
+        Emergency Mode provides guidance only. Always rely on professional medical services.
+    </p>
+
+</main>
+
+<script src="emergency-mode.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #eef6f6;
+    color: #333;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #0b7c7b, #5cc6c6);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+/* FEATURE NAV */
+.feature-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #ffffff;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.feature-nav a {
+    text-decoration: none;
+    color: #0b7c7b;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.feature-nav a:hover {
+    background: #0b7c7b;
+    color: white;
+}
+
+/* INTRO */
+.intro {
+    max-width: 900px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.intro h2 {
+    color: #0b7c7b;
+    margin-bottom: 15px;
+}
+
+/* FEATURES GRID */
+.features {
+    max-width: 1100px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    border-left: 6px solid #0b7c7b;
+}
+
+.feature-card h3 {
+    color: #0b7c7b;
+    margin-bottom: 10px;
+}
+
+/* CTA */
+.cta {
+    background: linear-gradient(135deg, #5cc6c6, #0b7c7b);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+    margin-top: 60px;
+}
+
+.cta a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 30px;
+    background: white;
+    color: #0b7c7b;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+    background: #eaf9f8;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+}
+
+/* ================= HOW IT WORKS ================= */
+.how-it-works {
+    max-width: 1000px;
+    margin: 80px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.step {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.step span {
+    display: inline-block;
+    background: #0b7c7b;
+    color: white;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* ================= WHO FOR ================= */
+.who-for {
+    background: #ffffff;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.user-groups {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.user-card {
+    padding: 20px;
+    background: #f1fbfa;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+/* ================= SAFETY ================= */
+.safety {
+    max-width: 900px;
+    margin: 70px auto;
+    padding: 40px;
+    background: #fff6f6;
+    border-left: 6px solid #d9534f;
+    border-radius: 15px;
+}
+
+.safety h2 {
+    color: #b52b27;
+    margin-bottom: 15px;
+}
+
+/* ================= QUICK ACTIONS ================= */
+.quick-actions {
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #0b7c7b, #5cc6c6);
+    color: white;
+}
+
+.action-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.action-buttons a {
+    text-decoration: none;
+    background: white;
+    color: #0b7c7b;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .steps,
+    .user-groups {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .steps,
+    .user-groups {
+        grid-template-columns: 1fr;
+    }
+}
+/* ===============================
+   QUICK ACTIONS – HOME
+   =============================== */
+.quick-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+.qa-btn {
+  text-decoration: none;
+  background: #0f766e;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.qa-btn:hover {
+  background: #115e59;
+}
+
+.qa-btn.emergency {
+  background: #dc2626;
+}
+
+.qa-btn.emergency:hover {
+  background: #b91c1c;
+}
+

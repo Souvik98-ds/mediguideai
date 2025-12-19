@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Chat | MediguideAI</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="ai-chat.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <div class="brand">MediguideAI</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="symptom-checker.html">Symptom Checker</a>
+    <a href="ai-chat.html" class="active">AI Chat</a>
+    <a href="do-dont.html">Do & Don’t</a>
+    <a href="emergency-care.html">Emergency</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<section class="chat-hero">
+  <h1>MediguideAI Assistant</h1>
+  <p>Your personal health guide for general medical information and self-care advice.</p>
+</section>
+
+<section class="chat-section">
+  <div class="chat-container">
+    <div class="quick-topics">
+  <button onclick="sendQuick('fever')">Fever</button>
+  <button onclick="sendQuick('headache')">Headache</button>
+  <button onclick="sendQuick('cold')">Cold & Cough</button>
+  <button onclick="sendQuick('diabetes')">Diabetes</button>
+  <button onclick="sendQuick('bp')">Blood Pressure</button>
+  <button onclick="sendQuick('pain')">Body Pain</button>
+</div>
+
+    <div id="chatBox" class="chat-box"></div>
+
+    <div class="chat-input">
+      <input id="userInput" type="text" placeholder="Ask about fever, cold, diabetes, BP, headache..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+</section>
+
+<section class="chat-info">
+  <div class="info-card">
+    <h3>How This Assistant Works</h3>
+    <p>
+      This assistant uses a built-in medical knowledge base to provide structured,
+      easy-to-understand health information. It does not replace professional care.
+    </p>
+    <ul>
+      <li>✔ Provides general disease info</li>
+      <li>✔ Explains symptoms & causes</li>
+      <li>✔ Suggests basic home care</li>
+      <li>✔ Warns when to see a doctor</li>
+    </ul>
+  </div>
+</section>
+
+<section class="chat-disclaimer">
+  <div class="disclaimer-card">
+    <h3>⚠️ Medical Disclaimer</h3>
+    <p>
+      This chatbot provides general health information for educational purposes only.
+      It does not provide diagnosis or treatment. Always consult a qualified doctor.
+    </p>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2025 MediguideAI</p>
+</footer>
+
+<script src="ai-chat.js"></script>
+</body>
+</html>

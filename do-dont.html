@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Do & Don’t | MediguideAI</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="do-dont.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <div class="brand">MediguideAI</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="symptom-checker.html">Symptom Checker</a>
+    <a href="ai-chat.html">AI Chat</a>
+    <a href="emergency-care.html">Emergency Care</a>
+    <a href="do-dont.html" class="active">Do & Don’t</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<section class="dd-generator">
+<h1>Do & Don’t Health Guidance</h1>
+<p>Select a condition to receive safe actions and precautions.</p>
+
+<div class="dd-form">
+<select id="conditionSelect">
+<option value="">-- Select Condition --</option>
+<option value="fever">Fever</option>
+<option value="cold">Cold & Cough</option>
+<option value="headache">Headache</option>
+<option value="bodyPain">Body Pain</option>
+<option value="stomach">Stomach Pain</option>
+<option value="vomiting">Vomiting</option>
+<option value="diarrhea">Diarrhea</option>
+<option value="cuts">Cuts & Wounds</option>
+<option value="burns">Burns</option>
+<option value="chest">Chest Pain</option>
+<option value="dizziness">Dizziness</option>
+</select>
+<button onclick="generateGuide()">Generate</button>
+</div>
+
+<div id="resultBox" class="dd-result" style="display:none;">
+  <div class="dd-box do-box">
+    <h3>Do</h3>
+    <ul id="doList"></ul>
+  </div>
+  <div class="dd-box dont-box">
+    <h3>Don’t</h3>
+    <ul id="dontList"></ul>
+  </div>
+</div>
+
+<section id="detailSection" class="dd-detail" style="display:none;">
+<div class="dd-card">
+<h3 id="condTitle"></h3>
+<p id="condOverview"></p>
+
+<h4>Why It Happens</h4>
+<ul id="whyList"></ul>
+
+<h4>Home Care Guidelines</h4>
+<ul id="homeList"></ul>
+
+<h4>When to See a Doctor</h4>
+<ul id="doctorList"></ul>
+
+<h4 class="warn">Emergency Warning</h4>
+<p id="emergencyText"></p>
+</div>
+</section>
+
+</section>
+<section class="dd-disclaimer">
+  <div class="disclaimer-card">
+    <h3>⚠️ Medical Disclaimer</h3>
+    <p>
+      The information provided on this Do & Don’t page is for educational and
+      informational purposes only and is not intended as medical advice,
+      diagnosis, or treatment.
+    </p>
+    <p>
+      MediguideAI does not replace consultation with a qualified healthcare
+      professional. Always seek the advice of your doctor or a certified medical
+      practitioner with any questions regarding a medical condition.
+    </p>
+    <p>
+      In case of a medical emergency, call your local emergency number or visit
+      the nearest emergency department immediately.
+    </p>
+    <p class="note">
+      Use this tool responsibly. Self-treatment based solely on this guidance
+      may be harmful.
+    </p>
+  </div>
+</section>
+
+
+<footer class="footer">
+<p>© 2025 MediguideAI</p>
+</footer>
+
+<script src="do-dont.js"></script>
+</body>
+</html>
